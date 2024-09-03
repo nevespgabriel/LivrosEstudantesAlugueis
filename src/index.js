@@ -11,6 +11,5 @@ app.use("/livro", livro_router);
 app.use("/estudante", estudante_router);
 app.use("/aluguel", aluguel_router);
 app.listen(porta, () => {
-    console.log(`Server running in ${porta} port.`);
-})
-
+  console.log(`Server running in ${porta} port.`);
+});
