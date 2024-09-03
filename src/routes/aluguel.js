@@ -28,3 +28,5 @@ router.delete("/:id", (req, res) => {
   aluguel_controller.destroy(req.params.id);
   res.json();
 });
+
+module.exports = router;

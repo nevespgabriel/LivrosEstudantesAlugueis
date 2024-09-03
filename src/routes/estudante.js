@@ -1,6 +1,6 @@
 const express = require("express");
-const router = express.Router();
 const estudante_controller = require("../controllers/estudante.js");
+const router = express.Router();
 
 router.post("/", (req, res) => {
   const body = req.body;
@@ -28,3 +28,5 @@ router.delete("/:id", (req, res) => {
   estudante_controller.destroy(req.params.id);
   res.json();
 });
+
+module.exports = router;
