@@ -2,7 +2,7 @@ let proximoId = 1;
 const estudante = require("../controllers/estudante.js");
 const livro = require("../controllers/livro.js");
 
-module.exports = (body, id = proximoId) => {
+module.exports = (body, id = proximoId++) => {
   if (
     body.dataAluguel != "" &&
     body.dataAluguel != undefined &&

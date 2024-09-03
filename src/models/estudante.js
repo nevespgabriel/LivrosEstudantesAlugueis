@@ -1,6 +1,6 @@
 let proximoId = 1;
 
-module.exports = (body, id = proximoId) => {
+module.exports = (body, id = proximoId++) => {
   if (
     body.nome != "" &&
     body.nome != undefined &&

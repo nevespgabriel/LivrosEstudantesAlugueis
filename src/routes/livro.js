@@ -14,14 +14,14 @@ router.get("/", (req, res) => {
 });
 
 router.get("/:id", (req, res) => {
-  const elemento = livro_controller.show();
+  const elemento = livro_controller.show(req.params.id);
   res.json(elemento);
 });
 
 router.put("/:id", (req, res) => {
   const body = req.body;
   const code = livro_controller.update(body, req.params.id);
-  res.status(code);
+  res.status(code).json();
 });
 
 router.delete("/:id", (req, res) => {
