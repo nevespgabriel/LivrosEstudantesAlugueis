@@ -17,7 +17,7 @@ module.exports = (body, id = proximoId++) => {
       nome: body.nome,
       matricula: body.matricula,
       curso: body.curso,
-      ano: body.ano,
+      ano: body.ano
     };
   }
 };

@@ -16,7 +16,7 @@ module.exports = (body, id = proximoId++) => {
       titulo: body.titulo,
       autor: body.autor,
       ano: body.ano,
-      genero: body.genero,
+      genero: body.genero
     };
   }
 };

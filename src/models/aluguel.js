@@ -16,7 +16,7 @@ module.exports = (body, id = proximoId++) => {
       idLivro: body.idLivro,
       idEstudante: body.idEstudante,
       dataAluguel: body.dataAluguel,
-      dataDevolucao: body.dataDevolucao,
+      dataDevolucao: body.dataDevolucao
     };
   }
 };
